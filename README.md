@@ -19,8 +19,8 @@ These three instructions increase compatibility with a wide variety of chip-8 ga
 
 I added a delay box to change a for loop designed to eat clock cycles. This may not be the best
 way to do this in the future but it significantly speeds up the speed of the cpu. Initially I tried
-using ``Thread.Sleep(1);`` but this did not provide the performance required to make games truely
-playable
+using ``Thread.Sleep(1);`` but this did not provide the performance required to make games truly
+playable as ``Thread.Sleep(1)`` has 15ms of overhead.
 
 ## Possible Future Improvements
 - Move project to better graphics library (Monogame, FNA)
