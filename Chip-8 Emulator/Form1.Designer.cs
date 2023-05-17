@@ -41,6 +41,8 @@
             shiftBox = new NonSelectableCheck();
             incrementBox = new NonSelectableCheck();
             jumpCheck = new NonSelectableCheck();
+            delayBox = new NonSelectableTextBox();
+            delayNumber = new Label();
             ((System.ComponentModel.ISupportInitialize)gameWindow).BeginInit();
             SuspendLayout();
             // 
@@ -154,12 +156,31 @@
             jumpCheck.UseVisualStyleBackColor = true;
             jumpCheck.CheckedChanged += jumpBox_Changed;
             // 
+            // delayBox
+            // 
+            delayBox.Location = new Point(673, 342);
+            delayBox.Name = "delayBox";
+            delayBox.Size = new Size(100, 23);
+            delayBox.TabIndex = 11;
+            delayBox.TextChanged += delayBox_TextChanged;
+            // 
+            // delayNumber
+            // 
+            delayNumber.AutoSize = true;
+            delayNumber.Location = new Point(673, 314);
+            delayNumber.Name = "delayNumber";
+            delayNumber.Size = new Size(71, 15);
+            delayNumber.TabIndex = 12;
+            delayNumber.Text = "Delay Speed";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Beige;
             ClientSize = new Size(863, 377);
+            Controls.Add(delayNumber);
+            Controls.Add(delayBox);
             Controls.Add(jumpCheck);
             Controls.Add(incrementBox);
             Controls.Add(shiftBox);
@@ -173,6 +194,7 @@
             Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
             Text = "Chip-8";
+            FormClosing += Form1_FormClosing;
             Load += Form1_Load;
             KeyDown += IsKeyDown;
             KeyUp += IsKeyUp;
@@ -195,5 +217,7 @@
         private NonSelectableCheck shiftBox;
         private NonSelectableCheck incrementBox;
         private NonSelectableCheck jumpCheck;
+        private NonSelectableTextBox delayBox;
+        private Label delayNumber;
     }
 }

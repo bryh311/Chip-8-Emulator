@@ -127,11 +127,11 @@ namespace Chip_8_Emulator
             this.stopped = true;
         }
 
-        public void Interpret(System.Windows.Forms.Timer timer)
+        public void Interpret(Thread current)
         {
             if (this.rom == null)
             {
-                timer.Stop();
+                current.Join();
                 MessageBox.Show("File not loaded!");
                 return;
             }
