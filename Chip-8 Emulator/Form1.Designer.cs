@@ -67,10 +67,10 @@
             // gameWindow
             // 
             gameWindow.BackColor = Color.Black;
-            gameWindow.Location = new Point(52, 75);
+            gameWindow.Location = new Point(12, 28);
             gameWindow.Margin = new Padding(3, 2, 3, 2);
             gameWindow.Name = "gameWindow";
-            gameWindow.Size = new Size(560, 240);
+            gameWindow.Size = new Size(640, 320);
             gameWindow.TabIndex = 3;
             gameWindow.TabStop = false;
             gameWindow.Paint += gameWindow_Paint;
@@ -99,16 +99,17 @@
             // shiftOption
             // 
             shiftOption.AutoSize = true;
-            shiftOption.Location = new Point(618, 75);
+            shiftOption.Location = new Point(673, 74);
             shiftOption.Name = "shiftOption";
             shiftOption.Size = new Size(116, 15);
             shiftOption.TabIndex = 5;
             shiftOption.Text = "Modern Shift Option";
+            shiftOption.Click += shiftOption_Click;
             // 
             // incrementOption
             // 
             incrementOption.AutoSize = true;
-            incrementOption.Location = new Point(616, 167);
+            incrementOption.Location = new Point(673, 160);
             incrementOption.Name = "incrementOption";
             incrementOption.Size = new Size(123, 15);
             incrementOption.TabIndex = 6;
@@ -117,7 +118,7 @@
             // modernJumpLabel
             // 
             modernJumpLabel.AutoSize = true;
-            modernJumpLabel.Location = new Point(618, 255);
+            modernJumpLabel.Location = new Point(673, 257);
             modernJumpLabel.Name = "modernJumpLabel";
             modernJumpLabel.Size = new Size(121, 15);
             modernJumpLabel.TabIndex = 7;
@@ -126,7 +127,7 @@
             // shiftBox
             // 
             shiftBox.AutoSize = true;
-            shiftBox.Location = new Point(673, 119);
+            shiftBox.Location = new Point(724, 122);
             shiftBox.Name = "shiftBox";
             shiftBox.Size = new Size(15, 14);
             shiftBox.TabIndex = 8;
@@ -136,7 +137,7 @@
             // incrementBox
             // 
             incrementBox.AutoSize = true;
-            incrementBox.Location = new Point(673, 209);
+            incrementBox.Location = new Point(724, 204);
             incrementBox.Name = "incrementBox";
             incrementBox.Size = new Size(15, 14);
             incrementBox.TabIndex = 9;
@@ -146,7 +147,7 @@
             // jumpCheck
             // 
             jumpCheck.AutoSize = true;
-            jumpCheck.Location = new Point(673, 288);
+            jumpCheck.Location = new Point(724, 286);
             jumpCheck.Name = "jumpCheck";
             jumpCheck.Size = new Size(15, 14);
             jumpCheck.TabIndex = 10;
@@ -158,7 +159,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Beige;
-            ClientSize = new Size(749, 346);
+            ClientSize = new Size(863, 377);
             Controls.Add(jumpCheck);
             Controls.Add(incrementBox);
             Controls.Add(shiftBox);

@@ -99,5 +99,10 @@ namespace Chip_8_Emulator
         {
             this.chip8.jumpOption = !this.chip8.jumpOption;
         }
+
+        private void shiftOption_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

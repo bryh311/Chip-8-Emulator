@@ -61,7 +61,8 @@ namespace Chip_8_Emulator
             this.delay = 0;
             this.sound = 0;
             this.registers = new byte[16];
-            this.beep = new SoundPlayer(@"C:\Users\bryh3\source\repos\Chip-8 Emulator\Chip-8 Emulator\assets\blipSelect.wav");
+            string directoryLocation = Directory.GetCurrentDirectory();
+            this.beep = new SoundPlayer(Path.Combine(directoryLocation, @"assets\blipSelect.wav"));
             this.stopped = true;
             int offset = 0x050;
             for (int i = 0; i < font.Length; i++)
