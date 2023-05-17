@@ -10,6 +10,7 @@ This chip-8 emulator has three buttons
 - Start: starts the emulator
 - Load: load rom into ram
 - Reset: resets the program
+
 And it has three optional checks
 - Modern Shift: uses the modern shift instruction instead of the original
 - Old Increment: uses the old increment instruction instead of the modern
